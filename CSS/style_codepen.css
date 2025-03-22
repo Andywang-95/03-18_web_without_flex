@@ -1,0 +1,872 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --font-big: "Montserrat", sans-serif;
+  --font-small: "Open Sans", sans-serif;
+  --color-primary: #0044a7;
+  --color-secondary: #26B1FF;
+  --color-text-black: #252525;
+  --color-text-gray: #8B8B8B;
+  --width-setting: 1000px;
+  --fz-normal: 16px;
+  --fw-content-text: 500;
+  --fw-content-title: 600;
+}
+
+/* 對整個body做設定 */
+* {
+  /* outline: 1px dashed red; */
+  box-sizing: border-box;
+  line-height: 26px;
+  /* font-weight: 500; */
+  /* font-family: var(--font-big); */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: var(--font-big);
+  font-weight: var(--fw-content-title);
+  padding: 13px 32px 12px;
+}
+
+.title_span {
+  color: var(--color-secondary);
+}
+
+/* header設定 */
+/* header_info設定 */
+.gb_header_info{
+  background-color: var(--color-primary);
+}
+
+.header_info {
+  max-width: var(--width-setting);
+  margin: 0 auto;
+  text-align-last: justify;
+  font-size: 0;
+  padding: 10px 20px;
+}
+
+.info_contact {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info_contact a {
+  display: inline-block;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.info_contact span {
+  display: inline-block;
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  color: #fff;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.info_contact span svg {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  fill: #fff;
+}
+
+.header_info_icons_4 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header_info_icons_4 li {
+  display: inline-block;
+}
+
+.header_info_icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: block;
+  padding: 7.5px 0;
+}
+
+.header_info_icon img {
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+
+/* nav設定 */
+nav {
+  max-width: var(--width-setting);
+  margin: 0 auto;
+  text-align-last: justify;
+  padding: 15px 20px;
+  font-size: 0;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img{
+  display: inline-block;
+  width: 150px;
+  vertical-align: middle;
+}
+
+.menu_list {
+  display: inline-block;
+  font-size: 0;
+}
+
+.menu {
+  display: inline-block;
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-title);
+  padding: 13px 0;
+  margin: 0 25px 0 0;
+  vertical-align: middle;
+}
+
+.menu:last-child {
+  margin: 0;
+}
+
+.contact_btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.contact_btn a {
+  font-size: var(--fz-normal);
+  border-radius: 50px;
+}
+
+/* main區塊 */
+/* section1 slogan */
+.slogan {
+  background-color: #EEF3F9;
+}
+
+.slogan_main {
+  max-width: var(--width-setting);
+  margin: 0 auto;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.slogan_des {
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-family: var(--font-big);
+  font-size: 18px;
+  font-weight: var(--fw-content-title);
+  line-height: 28px;
+  color: var(--color-primary);
+}
+
+h1 {
+  margin: 0 auto;
+  font-family: var(--font-big);
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 74px;
+  padding-bottom: 15px;
+}
+
+.slogan_text {
+  max-width: 65%;
+  margin: 0 auto;
+  font-family: var(--font-small);
+  color: var(--color-text-black);
+  padding-bottom: 20px;
+}
+
+/* section2 advantages */
+.advantages_cards_3 {
+  max-width: var(--width-setting);
+  margin: 0 auto;
+  text-align-last: justify;
+  font-size: 0;
+  padding: 100px 0;
+}
+
+.advantage_card {
+  display: inline-block;
+  width: 30%;
+  padding: 30px 15px;
+  margin: 0 15px;
+  vertical-align: top;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.advantage_icon span {
+  display: block;
+  padding: 15px;
+  width: fit-content;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.advantage_icon span svg{
+  width: 55px;
+  height: 55px;
+  fill: #fff;
+  display: block;
+}
+
+.advantage_title {
+  margin: 18px 0 10px 0;
+}
+
+h4 {
+  font-family: var(--font-big);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: var(--fw-content-title);
+  text-align-last: left;
+}
+
+.advantage_text {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  color: var(--color-text-gray);
+  font-weight: var(--fw-content-text);
+  text-align-last: left;
+}
+
+/* section3 invest */
+.invest {
+  padding-bottom: 100px;
+  max-width: var(--width-setting);
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.invest_pic {
+  width: 45%;
+  display: inline-block;
+  text-align: right;
+}
+
+.invest img {
+  width: 100%;
+}
+
+.invest img:first-child {
+  width: 95%;
+  /* display: inline-block; */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.invest_content {
+  display: inline-block;
+  width: 55%;
+  padding: 15px 0 0 25px;
+  vertical-align: top;
+}
+
+.invest_content_des, .invest_content_title {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: var(--font-big);
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+}
+
+.invest_content_text {
+  padding: 10px 0;
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  color: var(--color-text-gray);
+}
+
+.invest_content_list {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  color: var(--color-text-black);
+}
+
+.invest_content_list span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.invest_content_list svg {
+  display: block;
+}
+
+/* section4 banner */
+.banner {
+  background: url(https://templatekits.techeshta.com/accountant/wp-content/uploads/sites/8/2022/10/ready-for-your-next-adventure.jpg) no-repeat center / cover;
+}
+
+.banner_bgcover {
+  background-color: #000b;/* 不能用opacity設定不透明度，會影響到子層的btn */
+  padding: 100px 0;
+}
+
+h3 {
+  font-family: var(--font-big);
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.banner_content_btn {
+  padding-top: 20px;
+}
+
+/* section5 service */
+.service {
+  padding: 100px 0;
+  width: var(--width-setting);
+  margin: 0 auto;
+}
+
+.service_content {
+  text-align: center;
+  font-size: 0;
+}
+
+.service_content_subtitle {
+  margin-bottom: 10px;
+}
+
+.service_content_titles, .service_content_text {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.service_content_titles {
+  border-right: 1px solid #CCCCCC;
+}
+
+.service_content_text {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  color: var(--color-text-black);
+  padding-left: 20px;
+}
+
+.service_cards_3 {
+  margin-top: 70px;
+  text-align-last: justify;
+}
+
+.service_card {
+  display: inline-block;
+  width: 30%;
+  padding: 50px 16px;
+  margin-right: 25px;
+  vertical-align: top;
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.service_card:last-child {
+  margin-right: 0;
+}
+
+.service_card_icon span {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 28px;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+.service_card_icon svg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+}
+
+.service_card_content h4{
+  text-align-last: center;
+}
+
+.service_card_content_text {
+  margin-top: 15px;
+  text-align-last: center;
+  text-align: center;
+  color: var(--color-text-black);
+  font-family: var(--font-small);
+  font-weight: var(--fw-content-text);
+}
+
+.service_btn {
+  padding-top: 40px;
+}
+
+/* section6 rason */
+.reason {
+  background-color: #EEF3F9;
+  padding: 100px 0;
+}
+
+.reason_main {
+  width: var(--width-setting);
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.reason_content {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.reason_subtitle, .reason_title {
+  margin-bottom: 20px;
+}
+
+.reason_text {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  color: var(--color-text-black);
+  margin-bottom: 20px;
+}
+
+.reason_icon {
+  display: inline-block;
+}
+
+.reason_icon span {
+  display: inline-block;
+  padding: 19px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.reason_icon svg {
+  display: block;
+  width: 38px;
+  height: 38px;
+  fill: #fff;
+}
+
+.reason_list_content {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.reason_list_content h5 {
+  color: #000;
+  margin: 8px 0 5px 0;
+}
+
+.reason_list_text {
+  display: inline-block;
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  color: var(--color-text-gray);
+  text-wrap-mode: wrap;
+}
+
+.reason_pic {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.reason_pic img {
+  border-radius: 20px;
+}
+
+/* section7 team */
+.team {
+  width: var(--width-setting);
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.team_subtitle, .team_title {
+  margin-bottom: 10px;
+}
+
+.member_cards_4 {
+  padding-top: 20px;
+  font-size: 0;
+}
+
+.member_card {
+  display: inline-block;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.member_photo img {
+  border-radius: 15px 15px 0 0;
+  vertical-align: middle;
+}
+
+.member_info {
+  border: 2px solid #F0F0F0;
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
+  padding: 20px 10px;
+}
+
+.member_name h5 {
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+}
+
+.member_position h6 {
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  color: var(--color-primary);
+}
+
+/* section8 Words */
+.words {
+  background-color: #EEF3F9;
+  margin-bottom: 100px;
+  padding: 90px 0;
+}
+
+.words_main {
+  width: var(--width-setting);
+  margin: 0 auto;
+  font-size: 0;
+  text-align-last: justify;
+}
+
+.words_content {
+  display: inline-block;
+  width: 35%;
+  text-align-last: left;
+  vertical-align: middle;
+}
+
+.words_contents_text {
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: 400;
+  color: var(--color-text-gray);
+}
+
+.words_cards {
+  display: inline-block;
+  width: 65%;
+  vertical-align: middle;
+  padding-bottom: 40px;
+}
+
+.words_card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  /* text-align: center; */
+}
+
+.words_card_text {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  line-height: 26px;
+  font-weight: var(--fw-content-text);
+  color: var(--color-text-gray);
+  text-align-last: left;
+}
+
+.words_card_man {
+  text-align-last: left;
+}
+
+.words_card_man_pic {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.words_card_man_pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+}
+
+.words_card_man_des {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: var(--font-big);
+}
+
+.words_card_man_name {
+  font-size: 18px;
+  font-weight: var(--fw-content-title);
+}
+
+.words_card_man_position {
+  font-size: var(--fz-normal);
+  color: var(--color-text-gray);
+}
+
+.words_card_swipers {
+  text-align-last: center;
+}
+
+.words_card_swiper {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0003;
+  margin: 10px 10px;
+}
+
+.words_card_swiper:first-of-type {
+  background-color: var(--color-primary);
+}
+
+/* section9 Blog */
+.blog {
+  width: var(--width-setting);
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.blog_subtitle h6 {
+  margin-bottom: 10px;
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  color: var(--color-primary);
+}
+
+.blog_title h6 {
+  margin-bottom: 10px;
+  font-family: var(--font-big);
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: bold;
+}
+
+.blog_cards_3 {
+  padding-top: 30px;
+  font-size: 0;
+  text-align-last: justify;
+}
+
+.blog_card {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 15px;
+  width: calc((var(--width-setting) - 60px) / 3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  text-align-last: left;
+  vertical-align: top;
+}
+
+.blog_pic img {
+  border-radius: 15px 15px 0 0;
+}
+
+.blog_content_title {
+  margin-bottom: 15px;
+}
+
+.blog_content_title h5 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.blog_content {
+  margin-bottom: 10px;
+}
+
+.blog_content p {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  line-height: 26px;
+  color: var(--color-text-gray);
+}
+
+.blog_content_more{
+  display: block;
+  width: fit-content;
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-title);
+  color: var(--color-primary);
+}
+
+
+
+
+
+
+/* footer */
+.footer_info {
+  background-color: #EEF3F9;
+  padding: 60px 0;
+}
+
+.footer_info_blocks_4 {
+  margin: 0 auto;
+  width: var(--width-setting);
+  text-align-last: justify;
+  font-size: 0;
+}
+
+.footer_info_block {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+.footer_info_block:nth-of-type(2) {
+  padding-left: 55px;
+}
+
+.footer_info_block:nth-of-type(3) {
+  padding-left: 35px;
+}
+
+.footer_info_block:nth-of-type(4) {
+  padding-left: 20px;
+}
+
+.footer_logo {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+.footer_logo_content {
+  font-family: var(--font-small);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-text);
+  text-align-last: left;
+  margin-bottom: 20px;
+  line-height: 26px;/* 不確定為什麼*{}的設定沒有套用到 */
+}
+
+.footer_logo_icons_4{
+  text-align-last: left;
+}
+
+.footer_logo_icons_4 li {
+  display: inline-block;
+}
+
+.footer_logo_icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-right: 10px;
+  display: block;
+  padding: 9px 0;
+}
+
+.footer_logo_icon img {
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+
+.footer_info_title {
+  margin-bottom: 20px;
+}
+
+.footer_info_list {
+  margin-bottom: 12px;
+  text-align-last: left;
+}
+
+.footer_info_list a, .footer_info_list div {
+  display: inline-block;
+  width: 100%;
+  font-family: var(--font-big);
+  font-size: var(--fz-normal);
+  font-weight: var(--fw-content-title);
+  color: #000;
+  line-height: 26px;/* 不確定為什麼*{}的設定沒有套用到 */
+}
+
+.footer_info_list .footer_info_list_home {
+  color: var(--color-primary);
+}
+
+.footer_contact_icon {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.footer_contact_icon svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.footer_contact_text {
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
+}
+
+.footer_company {
+  padding: 13px 0;
+  background-color: var(--color-primary);
+}
+
+.footer_company h6 {
+  font-family: var(--font-big);
+  font-weight: var(--fw-content-text);
+  color: #fff;
+  text-align: center;
+}
+
